@@ -1,0 +1,29 @@
+pipeline {
+    agent {
+            node {
+                label 'ubuntu-18'
+            }
+    }
+    stages {
+        stage("QA Deploy") {
+            steps {
+                println "QA Deploy"
+            }
+        }
+        stage("QA Test") {
+            steps {
+                println "QA Test"
+            }
+        }
+        stage("UAT Deploy") {
+            steps {
+                println "QA Deploy"
+            }
+        }
+        stage("UAT Test") {
+            steps {
+                println "QA Test"
+            }
+        }
+    }
+}

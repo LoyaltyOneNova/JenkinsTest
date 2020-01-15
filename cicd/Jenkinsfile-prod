@@ -1,0 +1,19 @@
+pipeline {
+    agent {
+            node {
+                label 'ubuntu-18'
+            }
+    }
+    stages {
+        stage("PROD Deploy") {
+            steps {
+                println "PROD Deploy"
+            }
+        }
+        stage("PROD Test") {
+            steps {
+                println "PROD Test"
+            }
+        }
+    }
+}
