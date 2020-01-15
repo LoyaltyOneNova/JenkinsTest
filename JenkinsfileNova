@@ -57,7 +57,7 @@ pipeline {
         }
         stage("PROD Deploy") {
             input {
-                 message "Deploy to stage?"
+                 message "Deploy to PROD?"
                  ok "Deploy"
             }
             steps {
