@@ -1,0 +1,69 @@
+pipeline {
+    agent {
+            node {
+                label 'ubuntu-18'
+            }
+     }
+    stages {
+        stage("Build") {
+            steps {
+                println "Build"
+            }
+        }
+        stage("Unit Tests") {
+            steps {
+                println "Unit Test"
+            }
+        }
+        stage("Static Analysis") {
+            steps {
+                println "Static Analysis"
+            }
+        }
+        stage("Dev Deploy") {
+            steps {
+                println "Dev Deploy"
+            }
+        }
+        stage("Dev Test") {
+            steps {
+                println "Dev Test"
+            }
+        }
+        stage("Release") {
+            steps {
+                println "Release"
+            }
+        }
+        stage("QA Deploy") {
+            steps {
+                println "QA Deploy"
+            }
+        }
+        stage("QA Test") {
+            steps {
+                println "QA Test"
+            }
+        }
+        stage("UAT Deploy") {
+            steps {
+                println "QA Deploy"
+            }
+        }
+        stage("UAT Test") {
+            steps {
+                println "QA Test"
+            }
+        }
+        stage("PROD Deploy") {
+            steps {
+                println "PROD Deploy"
+            }
+        }
+        stage("PROD Test") {
+            steps {
+                println "PROD Test"
+            }
+        }
+    }
+}
